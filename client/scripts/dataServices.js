@@ -1,4 +1,4 @@
-const baseURL = "mongodb+srv://saharkhooshi:uVARW72btNhbFUkZ@cluster0.k2ocy.mongodb.net"; // Write down the base URL of the created API.
+const baseURL = "mongodb://localhost:27017/admin"; // Write down the base URL of the created API.
 
 const getAllUser = async () => {
     try {
