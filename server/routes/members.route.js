@@ -1,17 +1,16 @@
 import express from "express";
-
 import {
-    getAllFacultyMembers,
+  getAllFacultyMembers,
     addFacultyMember,
     deleteFacultyMember
-  } from "../controllers/user.controller.js";
+} from "../controllers/user.controller.js";
 
 const router = express.Router()
 
-  router.get("/", getAllFacultyMembers);
-  router.post("/", addFacultyMember);
-  router.delete("/:id", deleteFacultyMember);
+router.get("/", getAllFacultyMembers);
+router.post("/", addFacultyMember);
+router.delete("/:id", deleteFacultyMember);
 
 
 
-  module.exports = router;
+export default router;
